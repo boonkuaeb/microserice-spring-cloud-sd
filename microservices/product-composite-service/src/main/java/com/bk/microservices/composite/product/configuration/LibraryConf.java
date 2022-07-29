@@ -12,8 +12,7 @@ public class LibraryConf {
     String servicePort;
 
     @Bean
-    public ServiceUtil serviceUtil()
-    {
+    public ServiceUtil serviceUtil() {
         return new ServiceUtil(servicePort);
     }
 

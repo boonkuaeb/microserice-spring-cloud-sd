@@ -1,0 +1,8 @@
+[
+  {
+    "endpoint": "submit",
+    "param": "",
+    "staffRole": "Admin",
+    "customerRole": "report_viewer"
+  }
+]

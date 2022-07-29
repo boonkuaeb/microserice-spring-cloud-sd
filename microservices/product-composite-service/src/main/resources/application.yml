@@ -20,4 +20,4 @@ app:
 logging:
   level:
     root: info
-    com.bk.microservices: debug
+    com.bk: debug

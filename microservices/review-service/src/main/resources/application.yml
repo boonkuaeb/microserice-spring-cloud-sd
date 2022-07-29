@@ -4,3 +4,8 @@ server:
 spring:
   main:
     allow-bean-definition-overriding: true
+
+logging:
+  level:
+    root: info
+    com.bk: debug

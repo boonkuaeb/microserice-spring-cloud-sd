@@ -5,8 +5,7 @@ spring:
   main:
     allow-bean-definition-overriding: true
 
-
 logging:
   level:
-    root: INFO
-    com.bk.microservice: DEBUG
+    root: info
+    com.bk: debug
