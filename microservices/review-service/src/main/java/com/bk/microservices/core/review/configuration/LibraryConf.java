@@ -1,4 +1,4 @@
-package com.bk.microservice.core.product.configuration;
+package com.bk.microservices.core.review.configuration;
 
 import com.bk.util.http.ServiceUtil;
 import org.springframework.beans.factory.annotation.Value;

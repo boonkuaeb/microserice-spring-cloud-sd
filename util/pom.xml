@@ -8,7 +8,7 @@
 		<version>2.6.10</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.bk.microservices.util</groupId>
+	<groupId>com.bk</groupId>
 	<artifactId>util</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>util</name>
@@ -39,7 +39,7 @@
 		</dependency>
 
 		<dependency>
-			<groupId>com.bk.microservices.api</groupId>
+			<groupId>com.bk</groupId>
 			<artifactId>api</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>

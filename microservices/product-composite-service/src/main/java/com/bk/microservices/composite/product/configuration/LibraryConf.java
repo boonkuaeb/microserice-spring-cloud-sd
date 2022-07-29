@@ -1,4 +1,4 @@
-package com.bk.microservice.core.product.configuration;
+package com.bk.microservices.composite.product.configuration;
 
 import com.bk.util.http.ServiceUtil;
 import org.springframework.beans.factory.annotation.Value;
@@ -16,4 +16,5 @@ public class LibraryConf {
     {
         return new ServiceUtil(servicePort);
     }
+
 }

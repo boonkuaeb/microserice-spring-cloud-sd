@@ -1,16 +1,14 @@
 package com.bk.microservice.core.product.services;
 
-import com.bk.microservices.api.core.product.Product;
-import com.bk.microservices.api.core.product.ProductService;
-import com.bk.microservices.api.exceptions.InvalidInputException;
-import com.bk.microservices.api.exceptions.NotFoundException;
-import com.bk.microservices.util.http.ServiceUtil;
+import com.bk.api.core.product.Product;
+import com.bk.api.core.product.ProductService;
+import com.bk.api.exceptions.InvalidInputException;
+import com.bk.api.exceptions.NotFoundException;
+import com.bk.util.http.ServiceUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;
-
-
 
 @RestController
 public class ProductServiceImpl implements ProductService {

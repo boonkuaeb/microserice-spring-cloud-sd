@@ -33,13 +33,13 @@
 		</dependency>
 
 		<dependency>
-			<groupId>com.bk.microservices.api</groupId>
+			<groupId>com.bk</groupId>
 			<artifactId>api</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 
 		<dependency>
-			<groupId>com.bk.microservices.util</groupId>
+			<groupId>com.bk</groupId>
 			<artifactId>util</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
