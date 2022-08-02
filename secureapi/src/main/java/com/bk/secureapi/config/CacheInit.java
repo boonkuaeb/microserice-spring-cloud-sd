@@ -17,12 +17,13 @@ public class CacheInit {
     @PostConstruct
     private void postConstruct() {
         Forbidden endpoint = new Forbidden();
-        endpoint.setId("product_99-ADMIN-NORMALUSER".toLowerCase());
+        String key = "product_99-ADMIN-NORMALUSER".toLowerCase();
+        endpoint.setId(key);
         endpoint.setDescription("Whe route product and productId 99 and staff role ADMIN and customer role NORMAL_USER");
         forbiddenRepo.save(endpoint);
-        System.out.println("Add redis test data");
+        System.out.println("Add redis test data,"+key);
 
-        Forbidden endpoint2 = forbiddenRepo.findById("submit");
+        Forbidden endpoint2 = forbiddenRepo.findById(key);
         System.out.println(endpoint2.getDescription());
     }
 }
