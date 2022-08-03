@@ -4,7 +4,6 @@ import com.bk.api.core.product.Product;
 import com.bk.api.core.product.ProductService;
 import com.bk.api.exceptions.InvalidInputException;
 import com.bk.api.exceptions.NotFoundException;
-import com.bk.secureapi.component.CheckACL;
 import com.bk.util.http.ServiceUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -16,13 +15,12 @@ public class ProductServiceImpl implements ProductService {
 
     private static final Logger LOG = LoggerFactory.getLogger(ProductServiceImpl.class);
 
-    private final CheckACL acl;
 
     private final ServiceUtil serviceUtil;
 
     @Autowired
-    public ProductServiceImpl(CheckACL acl, ServiceUtil serviceUtil) {
-        this.acl = acl;
+    public ProductServiceImpl(ServiceUtil serviceUtil) {
+
         this.serviceUtil = serviceUtil;
     }
 
@@ -30,7 +28,6 @@ public class ProductServiceImpl implements ProductService {
     public Product getProduct(int productId) {
         LOG.debug("/product return the found product for productId={}", productId);
 
-        acl.checkAccess( "/product","ADMIN","NORMAL_USER", String.valueOf(productId));
 
         if (productId < 1) {
             throw new InvalidInputException("Invalid productId: " + productId);
